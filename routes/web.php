@@ -28,13 +28,25 @@ Route::group(['prefix'=>'/'],function(){
 });
 
 Route::group(['prefix'=>'shop'],function(){
-    Route::get('/dashboard','Shop\ShopController@dashboard');
-    Route::get('/profile','Shop\ShopController@getProfile');
+
+    Route::get('login','Shop\Auth\LoginController@showLoginForm')->name('shop.login');
+    Route::get('register','Shop\Auth\RegisterController@showRegistrationForm')->name('shop.register');
+    Route::get('verify','Shop\Auth\RegisterController@verify')->name('shop.verify');
+
+    Route::get('/dashboard','Shop\ShopController@dashboard')->name('shop.dashboard');
+    Route::get('/profile','Shop\ShopController@getProfile')->name('shop.profile');
     Route::get('/my-ads','Shop\ShopController@getMyAds');
+
+    Route::post('login','Shop\Auth\LoginController@login')->name('shop.login');
+
 
 });
 
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/dashboard','Admin\AdminController@dashboard');
+
+    Route::get('login','Admin\Auth\LoginController@showLoginForm')->name('admin.login');
+    Route::get('register','Admin\Auth\RegisterController@showRegistrationForm')->name('admin.register');
+
 });
 
