@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NsaCraft</title>
+    <title>@yield('title')</title>
 
     <!-- PLUGINS CSS STYLE -->
     <link href="{{asset('assets/plugins/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/sb-admin.min.css')}}" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="{{asset('assets/plugins/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Font Awesome -->
@@ -137,6 +139,7 @@
 <!-- JAVASCRIPTS -->
 <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('assets/plugins/tether/js/tether.min.js')}}"></script>
 <script src="{{asset('assets/plugins/raty/jquery.raty-fa.js')}}"></script>
 <script src="{{asset('assets/plugins/bootstrap/dist/js/popper.min.js')}}"></script>
