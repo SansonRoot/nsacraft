@@ -25,7 +25,11 @@ class RegisterController extends Controller
 
     }
 
-    public function getRegistrationForm(){
+    public function showRegistrationForm(){
         return view('shop.auth.register');
+    }
+
+    public function showVerifyForm(){
+        return view('shop.auth.verify');
     }
 }

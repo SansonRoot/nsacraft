@@ -24,7 +24,7 @@ class RegisterController extends Controller
 
     }
 
-    public function getRegistrationForm(){
+    public function showRegistrationForm(){
         return view('admin.auth.register');
     }
 }

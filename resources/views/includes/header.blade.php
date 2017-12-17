@@ -47,7 +47,10 @@
                         </ul>
                         <ul class="navbar-nav ml-auto mt-10">
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="index.html">Login</a>
+                                <a class="nav-link login-button" href=""><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link login-button" href="">Register</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Add Listing</a>

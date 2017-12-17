@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    NsaCraft
+ @endsection
+
 @section('hero')
     @include('includes.hero')
 @endsection

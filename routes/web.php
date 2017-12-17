@@ -31,7 +31,7 @@ Route::group(['prefix'=>'shop'],function(){
 
     Route::get('login','Shop\Auth\LoginController@showLoginForm')->name('shop.login');
     Route::get('register','Shop\Auth\RegisterController@showRegistrationForm')->name('shop.register');
-    Route::get('verify','Shop\Auth\RegisterController@verify')->name('shop.verify');
+    Route::get('verify','Shop\Auth\RegisterController@showVerifyForm')->name('shop.verify');
 
     Route::get('/dashboard','Shop\ShopController@dashboard')->name('shop.dashboard');
     Route::get('/profile','Shop\ShopController@getProfile')->name('shop.profile');
