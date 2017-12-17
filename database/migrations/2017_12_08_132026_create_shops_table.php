@@ -15,6 +15,17 @@ class CreateShopsTable extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('shop_name');
+            $table->string('accounut_type')->default('merchant');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('shop_country')->default('ghana');
+            $table->string('shop_city');
+            $table->string('verification_code');
+            $table->string('estimated_delivery')->default('4 - 5 working days');
+            $table->string('address');
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

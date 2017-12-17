@@ -37,7 +37,8 @@ Route::group(['prefix'=>'shop'],function(){
     Route::get('/profile','Shop\ShopController@getProfile')->name('shop.profile');
     Route::get('/my-ads','Shop\ShopController@getMyAds');
 
-    Route::post('login','Shop\Auth\LoginController@login')->name('shop.login');
+    Route::post('/login','Shop\Auth\LoginController@login')->name('shop.login');
+    Route::post('/register','Shop\Auth\RegisterController@register')->name('shop.register');
 
 
 });

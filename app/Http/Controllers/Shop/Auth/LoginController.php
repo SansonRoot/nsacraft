@@ -23,7 +23,11 @@ class LoginController extends Controller
 
     public function login(Request $request){
 
-    }
+        if(Auth::guard('shop')->attempt(['email'=>$request['email'],'password'=>$request['password']])){
+            return redirect('/shop/dashboard');
+        }
+        return redirect('/shop/login');
+    } 
 
     public function showLoginForm(){
         return view('shop.auth.login');
