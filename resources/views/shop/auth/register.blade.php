@@ -73,56 +73,28 @@
 
             <div class="row">
 
-                <form action="">
-
-                    <div class="column  col-md-6 col-sm-4 ">
+                <form class="col-md-6 col-md-offset-3" action="{{route('shop.register')}}" method="post" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    <div class="column col-md-6 col-sm-4 ">
                         <div class="form-group">
                             <label><b>Shop name</b></label>
-                            <input type="text" class="form-control" placeholder="Enter Shop name" name="shop name" required="required">
+                            <input type="text" class="form-control" placeholder="Enter Shop name" name="shop_name" required="required">
                         </div>
                         <div class="form-group">
-                            <label><b>First name</b></label>
-                            <input type="text"  class="form-control" placeholder="Enter First name" name="First name" required="required">
+                            <label><b>Shop Owner's Email</b></label>
+                            <input type="email"  class="form-control" placeholder="Shop Owner's Email" name="email" required="required">
                         </div>
                         <div class="form-group">
-                            <label><b>Surname</b></label>
-                            <input type="text"  class="form-control" placeholder="Enter surname" name="surname" required="required">
+                            <label><b>Phone</b></label>
+                            <input type="text"  class="form-control" placeholder="Shop Owners Phone" name="phone" required="required">
                         </div>
+                        {{--<div class="form-group">
+                            <label><b>Shop's Country</b></label>
+                            <input type="text" class="form-control" placeholder="Default (Ghana)" name="shop_country" required="required">
+                        </div>--}}
                         <div class="form-group">
-                            <label><b>Email</b></label>
-                            <input type="email" class="form-control" placeholder="Enter Email" name="email" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label><b>Username</b></label>
-                            <input type="text" class="form-control" placeholder="Enter Username" name="username" required="required">
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="column  col-md-6 col-sm-4 ">
-
-
-                        <div class="form-group">
-                            <label><b>Password</b></label>
-                            <input type="password" class="form-control" placeholder="Enter Password" name="password" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label><b>Confirm Password</b></label>
-                            <input type="password" class="form-control" placeholder=" Repeat Password" name="password confirm" required="required">
-                        </div >
-                        <div class="form-group">
-                            <label><b>Telephone</b></label>
-                            <input type="tel" class="form-control" placeholder="Enter Telephone" name="telephone" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label><b>Address</b></label>
-                            <input type="text" class="form-control" placeholder="Enter Address" name="address" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label><b>Select Region</b></label>
-                            <select name="region">
+                            <label><b>Shop's city</b></label>
+                            <select name="shop_city">
                                 <option value="Greater Accra">Greater Accra</option>
                                 <option value="Ashanti">Ashanti</option>
                                 <option value="Eastern">Eastern</option>
@@ -135,7 +107,22 @@
                                 <option value="Central">Central</option>
                             </select>
                         </div>
+                    </div>
 
+                    <div class="column  col-md-6 col-sm-4 ">
+                        <div class="form-group">
+                            <label><b>Shop's Address</b></label>
+                            <textarea cols="15" rows="10" name="address" class="form-control"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label><b>Password</b></label>
+                            <input type="password" class="form-control" placeholder="Enter Password" name="password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label><b>Confirm Password</b></label>
+                            <input type="password" class="form-control" placeholder=" Repeat Password" name="password_confirmation" required="required">
+                        </div >
 
 
                     </div>

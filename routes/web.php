@@ -12,7 +12,9 @@
 */
 
 Route::get('/', [
-    'as'=>'index',
+    'uses'=>'GuestController@landing'
+]);
+Route::get('/index', [
     'uses'=>'GuestController@index'
 ]);
 Route::get('/category','GuestController@showCategories');
@@ -39,6 +41,7 @@ Route::group(['prefix'=>'shop'],function(){
 
     Route::post('/login','Shop\Auth\LoginController@login')->name('shop.login');
     Route::post('/register','Shop\Auth\RegisterController@register')->name('shop.register');
+    Route::post('/verify','Shop\Auth\RegisterController@verify')->name('shop.verify');
 
 
 });
@@ -48,6 +51,9 @@ Route::group(['prefix'=>'admin'],function(){
 
     Route::get('login','Admin\Auth\LoginController@showLoginForm')->name('admin.login');
     Route::get('register','Admin\Auth\RegisterController@showRegistrationForm')->name('admin.register');
+
+    Route::post('/login','Admin\Auth\LoginController@login')->name('admin.login');
+    Route::post('/register','Admin\Auth\RegisterController@register')->name('admin.register');
 
 });
 

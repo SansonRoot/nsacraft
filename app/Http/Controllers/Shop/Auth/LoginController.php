@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Shop\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -27,7 +28,7 @@ class LoginController extends Controller
             return redirect('/shop/dashboard');
         }
         return redirect('/shop/login');
-    } 
+    }
 
     public function showLoginForm(){
         return view('shop.auth.login');

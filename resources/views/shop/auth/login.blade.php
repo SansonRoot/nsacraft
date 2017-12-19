@@ -81,19 +81,28 @@
 
     <h2>Login to our site</h2>
 
-    <form action="">
+    <form action="{{route('shop.login')}}" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
 
 
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
+        <div class="col-md-9 col-md-offset-2">
+            <div class="form-group">
+                <label><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="Enter email" name="email" required>
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            <div class="form-group">
+                <label><b>Password</b></label>
+                <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
 
-            <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</button>
-            <input type="checkbox" checked="checked"> Remember me
+            </div>
+            <div class="form-group">
+
+                <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+
         </div>
 
         <div class="container" style="background-color:#f1f1f1">

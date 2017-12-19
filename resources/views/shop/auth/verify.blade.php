@@ -41,7 +41,7 @@
                     <div class="offset-md-3 col-6">
 
                         <h2>Please verify your account</h2>
-                        <form action="">
+                        <form action="{{route('shop.verify')}}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <input type="text" placeholder="Enter code" name="verify" required>
                             <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Verify</button>
