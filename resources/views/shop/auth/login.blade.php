@@ -1,110 +1,104 @@
-@extends('layouts.master')
+@extends('layouts.base')
 
-@section('title')
-    Login page
-@stop
+@section('title','Login')
 
 @section('content')
 
-
-    <style>
-        form {
-            border: 3px solid #f1f1f1;
-        }
-
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-        /*.imgcontainer {*/
-            /*text-align: center;*/
-            /*margin: 24px 0 12px 0;*/
-        /*}*/
-
-        img.avatar {
-            width: 40%;
-            border-radius: 50%;
-        }
-
-        .container {
-            padding: 16px;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-    </style>
-
-
-<section class=" section">
-    <!-- Container Start -->
-    <div class="container">
-        <div class="row">
-            <div class="offset-md-3 col-6">
-
-    <h2>Login to our site</h2>
-
-    <form action="">
-        {{ csrf_field() }}
-
-
+    <div class="breadcrumbs-v4">
         <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn"><i class="fa fa-close" aria-hidden="true"></i>&nbsp; Cancel</button>
-            <span class="psw"><a  href="#"> Forgot password?</a></span>
-        </div>
-        </form>
-            </div>
-        </div>
+            <span class="page-name">Log In</span>
+            <h1>Maecenas <span class="shop-green">enim</span> sapien</h1>
+            <ul class="breadcrumb-v4-in">
+                <li><a href="{{url('/')}}">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li class="active">Log In</li>
+            </ul>
+        </div><!--/end container-->
     </div>
-    </section>
 
+    <div class="log-reg-v3 content-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 md-margin-bottom-50">
+                    <h2 class="welcome-title">Welcome to Unify</h2>
+                    <p>Suspendisse et tincidunt ipsum, et dignissim urna. Vestibulum nisl tortor, gravida at magna et, suscipit vehicula massa.</p><br>
+                    <div class="info-block-v2">
+                        <i class="icon icon-layers"></i>
+                        <div class="info-block-in">
+                            <h3>Pellentesque vulputate</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
+                    </div>
+                    <div class="info-block-v2">
+                        <i class="icon icon-settings"></i>
+                        <div class="info-block-in">
+                            <h3>Curabitur tincidunt</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
+                    </div>
+                    <div class="info-block-v2">
+                        <i class="icon icon-paper-plane"></i>
+                        <div class="info-block-in">
+                            <h3>Aenean condimentum</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
+                    </div>
+                </div>
 
-@stop
+                <div class="col-md-5">
+                    <form id="sky-form1" class="log-reg-block sky-form">
+                        <h2>Log in to your account</h2>
+
+                        <section>
+                            <label class="input login-input">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="email" placeholder="Email Address" name="email" class="form-control">
+                                </div>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="input login-input no-border-top">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" placeholder="Password" name="password" class="form-control">
+                                </div>
+                            </label>
+                        </section>
+                        <div class="row margin-bottom-5">
+                            <div class="col-xs-6">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox"/>
+                                    <i></i>
+                                    Remember me
+                                </label>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a href="#">Forget your Password?</a>
+                            </div>
+                        </div>
+                        <button class="btn-u btn-u-sea-shop btn-block margin-bottom-20" type="submit">Log in</button>
+
+                        <div class="border-wings">
+                            <span>or</span>
+                        </div>
+
+                        <div class="row columns-space-removes">
+                            <div class="col-lg-6 margin-bottom-10">
+                                <button type="button" class="btn-u btn-u-md btn-u-fb btn-block"><i class="fa fa-facebook"></i> Facebook Log In</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="button" class="btn-u btn-u-md btn-u-tw btn-block"><i class="fa fa-twitter"></i> Twitter Log In</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="margin-bottom-20"></div>
+                    <p class="text-center">Don't have account yet? Learn more and <a href="{{route('shop.register')}}">Sign Up</a></p>
+                </div>
+            </div><!--/end row-->
+        </div><!--/end container-->
+    </div>
+
+@endsection
+

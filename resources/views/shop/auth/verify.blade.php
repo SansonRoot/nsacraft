@@ -1,55 +1,109 @@
-@extends('layouts.master')
+@extends('layouts.base')
 
-@section('title')
-   verify account page
-    @stop
+@section('title','Verify')
+
 
 @section('content')
-    <style>
-        form {
-            border: 3px solid #f1f1f1;
-        }
+    <div class="breadcrumbs-v4">
+        <div class="container">
+            <span class="page-name">Verify account</span>
+            <h1>Maecenas <span class="shop-green">enim</span> sapien</h1>
+            <ul class="breadcrumb-v4-in">
+                <li><a href="{{url('/')}}">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li class="active">verify</li>
+            </ul>
+        </div><!--/end container-->
+    </div>
 
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-    </style>
-
-  <section class=" section">
-        <!-- Container Start -->
-          <div class="container">
-               <div class="row">
-                    <div class="offset-md-3 col-6">
-
-                        <h2>Please verify your account</h2>
-                        <form action="">
-                            {{ csrf_field() }}
-                            <input type="text" placeholder="Enter code" name="verify" required>
-                            <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Verify</button>
-                        </form>
-
+    <div class="log-reg-v3 content-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 md-margin-bottom-50">
+                    <h2 class="welcome-title">Welcome to Unify</h2>
+                    <p>Suspendisse et tincidunt ipsum, et dignissim urna. Vestibulum nisl tortor, gravida at magna et, suscipit vehicula massa.</p><br>
+                    <div class="info-block-v2">
+                        <i class="icon icon-layers"></i>
+                        <div class="info-block-in">
+                            <h3>Pellentesque vulputate</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
+                    </div>
+                    <div class="info-block-v2">
+                        <i class="icon icon-settings"></i>
+                        <div class="info-block-in">
+                            <h3>Curabitur tincidunt</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
+                    </div>
+                    <div class="info-block-v2">
+                        <i class="icon icon-paper-plane"></i>
+                        <div class="info-block-in">
+                            <h3>Aenean condimentum</h3>
+                            <p>Vestibulum non ex volutpat, sodales diam sit amet, semper nunc. Integer sed nibh commodo, tincidunt nisi.</p>
+                        </div>
                     </div>
                 </div>
-           </div>
-  </section>
 
-    @stop
+                <div class="col-md-5">
+                    <form id="sky-form1" class="log-reg-block sky-form">
+                        <h2>Verify your account</h2>
+
+                        <section>
+                            <label class="input login-input">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" placeholder="" name="verify" class="form-control">
+                                </div>
+                            </label>
+                        </section>
+                        {{--<section>--}}
+                            {{--<label class="input login-input no-border-top">--}}
+                                {{--<div class="input-group">--}}
+                                    {{--<span class="input-group-addon"><i class="fa fa-lock"></i></span>--}}
+                                    {{--<input type="password" placeholder="Password" name="password" class="form-control">--}}
+                                {{--</div>--}}
+                            {{--</label>--}}
+                        {{--</section>--}}
+                        {{--<div class="row margin-bottom-5">--}}
+                            {{--<div class="col-xs-6">--}}
+                                {{--<label class="checkbox">--}}
+                                    {{--<input type="checkbox" name="checkbox"/>--}}
+                                    {{--<i></i>--}}
+                                    {{--Remember me--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-xs-6 text-right">--}}
+                                {{--<a href="#">Forget your Password?</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        <button class="btn-u btn-u-sea-shop btn-block margin-bottom-20" type="submit">Verify</button>
+
+                        {{--<div class="border-wings">--}}
+                            {{--<span>or</span>--}}
+                        {{--</div>--}}
+
+                        {{--<div class="row columns-space-removes">--}}
+                            {{--<div class="col-lg-6 margin-bottom-10">--}}
+                                {{--<button type="button" class="btn-u btn-u-md btn-u-fb btn-block"><i class="fa fa-facebook"></i> Facebook Log In</button>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-6">--}}
+                                {{--<button type="button" class="btn-u btn-u-md btn-u-tw btn-block"><i class="fa fa-twitter"></i> Twitter Log In</button>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    </form>
+
+                    <div class="margin-bottom-20"></div>
+                    <p class="text-center">Don't have account yet? Learn more and <a href="{{route('shop.register')}}">Sign Up</a></p>
+                </div>
+            </div><!--/end row-->
+        </div><!--/end container-->
+    </div>
+
+
+
+
+
+
+
+@endsection

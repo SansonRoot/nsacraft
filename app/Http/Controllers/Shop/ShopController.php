@@ -9,9 +9,9 @@ class ShopController extends Controller
 {
     //
 
-    public function __construct(){
-        $this->middleware('auth:shop');
-    }
+//    public function __construct(){
+//        $this->middleware('auth:shop');
+//    }
 
     public function dashboard(){
         return view('shop.dashboard');
