@@ -19,6 +19,7 @@
     <div class="log-reg-v3 content-md margin-bottom-30">
         <div class="container">
             <div class="row">
+
                 <div class="col-md-7 md-margin-bottom-50">
                     <h2 class="welcome-title">Welcome to Unify</h2>
                     <p>Suspendisse et tincidunt ipsum, et dignissim urna. Vestibulum nisl tortor, gravida at magna et, suscipit vehicula massa.</p><br>
@@ -41,6 +42,11 @@
                                 <small>Sale</small>
                             </div>
                         </div>
+
+
+
+
+
                     </div>
                     <div class="members-number">
                         <h3>Join more than <span class="shop-green">13,000</span> members worldwide</h3>

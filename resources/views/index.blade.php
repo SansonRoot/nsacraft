@@ -1,6 +1,12 @@
 @extends('layouts.base')
 
+<<<<<<< HEAD
 @section('title','A Future for HandCraftings')
+=======
+@section('title')
+    NsaCraft
+ @endsection
+>>>>>>> 37e7689f442f17b65c4dcb367b9900a0702daa20
 
 @section('content')
     @include('includes.slider')

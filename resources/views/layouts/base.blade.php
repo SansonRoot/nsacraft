@@ -4,7 +4,12 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 
+
     <title>NsaCraft | @yield('title')</title>
+
+
+
+    <!-- Meta -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +25,9 @@
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/shop.style.css')}}">
+
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+
 
     <!-- CSS Header and Footer -->
     <link rel="stylesheet" href="{{asset('assets/css/headers/header-v5.css')}}">
@@ -33,9 +40,11 @@
     <link rel="stylesheet" href="{{asset('assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/owl-carousel/owl-carousel/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/revolution-slider/rs-plugin/css/settings.css')}}">
+
     <link rel="stylesheet" href="{{asset('assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/pages/profile.css')}}">
+
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="{{asset('assets/css/theme-colors/default.css')}}" id="style_color">
@@ -171,12 +180,16 @@
                         <!-- Pages -->
                         <li class="dropdown active">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+
                                 Art
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="active"><a href="#">Painting</a></li>
                                 <li><a href="#">Drawings</a></li>
                                 <li><a href="#">Sculpture</a></li>
+
+
+
 
                             </ul>
                         </li>
@@ -185,6 +198,7 @@
                         <!-- Promotion -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+
                                 Fashion
                             </a>
                             <ul class="dropdown-menu">
@@ -194,11 +208,15 @@
                                 <li><a href="#">Shoes</a></li>
                                 <li><a href="#">Accessories (Belt, Cuff links)</a></li>
 
+
+
+
                             </ul>
                         </li>
                         <!-- End Promotion -->
 
                         <!-- Gifts -->
+
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
                                 Furniture & Furnishing
@@ -208,6 +226,9 @@
                                 <li><a href="#">Bedroom</a></li>
                                 <li><a href="#">Outdoor</a></li>
                                 <li><a href="#">Office</a></li>
+
+
+
 
                             </ul><!--/end dropdown-menu-->
                         </li>
@@ -436,14 +457,17 @@
 <script src="{{asset('assets/plugins/back-to-top.js')}}"></script>
 <script src="{{asset('assets/plugins/smoothScroll.js')}}"></script>
 <script src="{{asset('assets/plugins/jquery.parallax.js')}}"></script>
+
 <script type="text/javascript" src="{{asset('assets/plugins/counter/waypoints.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/plugins/counter/jquery.counterup.min.js')}}"></script>
+
 <script src="{{asset('assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')}}"></script>
 <script src="{{asset('assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <script src="{{asset('assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script>
 <script src="{{asset('assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
 <!-- JS Customization -->
 <script src="{{asset('assets/js/custom.js')}}"></script>
+
 <script type="text/javascript" src="{{asset('assets/js/plugins/datepicker.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/plugins/style-switcher.js')}}"></script>
 <!-- JS Page Level -->
@@ -453,6 +477,13 @@
 <script src="{{asset('assets/js/plugins/revolution-slider.js')}}"></script>
 <script src="{{asset('assets/js/plugins/style-switcher.js')}}"></script>
 <script src="{{asset('assets/js/plugins/ladda-buttons.js')}}"></script>
+
+<!-- JS Page Level -->
+<script src="{{asset('assets/js/shop.app.js')}}"></script>
+<script src="{{asset('assets/js/plugins/owl-carousel.js')}}"></script>
+<script src="{{asset('assets/js/plugins/revolution-slider.js')}}"></script>
+<script src="{{asset('assets/js/plugins/style-switcher.js')}}"></script>
+
 <script>
     jQuery(document).ready(function() {
         App.init();

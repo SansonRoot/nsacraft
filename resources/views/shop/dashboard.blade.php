@@ -1,3 +1,4 @@
+
 @extends('layouts.base')
 
 @section('title','Shop_profile')
@@ -866,6 +867,8 @@
         </div>
     </div><!--/container-->
     <!--=== End Profile ===-->
+
+
 
 
 @endsection

@@ -4,6 +4,7 @@
 
 
 @section('content')
+
     <div class="breadcrumbs-v4">
         <div class="container">
             <span class="page-name">Verify account</span>
@@ -15,6 +16,7 @@
             </ul>
         </div><!--/end container-->
     </div>
+
 
     <div class="log-reg-v3 content-md">
         <div class="container">

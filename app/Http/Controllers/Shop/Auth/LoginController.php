@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Shop\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -23,6 +24,10 @@ class LoginController extends Controller
 
     public function login(Request $request){
 
+        if(Auth::guard('shop')->attempt(['email'=>$request['email'],'password'=>$request['password']])){
+            return redirect('/shop/dashboard');
+        }
+        return redirect('/shop/login');
     }
 
     public function showLoginForm(){
